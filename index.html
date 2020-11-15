@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Purbachol Group</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css here -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/utilities.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="dashboard-container">
+        <nav class="navBar">
+            <div class="nav_icon">
+                <i class="fa fa-bars" onclick="toggleSidebar()"></i>
+            </div>
+            <div class="navbar__left">
+                <a href="#">Subscribers</a>
+                <a href="#">Video Management</a>
+                <a href="#" class="active_link">Admin</a>
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i class="far fa-clock"></i>
+                </a>
+                <a href="#">
+                    <img src="assets/images/avatar.svg" alt="avater" width="30">
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main__container">
+                <div class="main__title">
+                    <img src="./assets/images/hello.svg" alt="hello">
+                    <div class="main__greeting">
+                        <h1>Hello Codersbite</h1>
+                        <p>Welcome to your admin dashboard</p>
+                    </div>
+                </div>
+                <div class="main__cards">
+                    <div class="card_body">
+                        <i class="fa fa-user fa-2x text-lightblue"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Number of Subscribers</p>
+                            <span class="font-bold text-title">578</span>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <i class="fa fa-calendar fa-2x text-red"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Times of Watching</p>
+                            <span class="font-bold text-title">2467</span>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <i class="fa fa-camera fa-2x text-yellow"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Number of Videos</p>
+                            <span class="font-bold text-title">340</span>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <i class="fa fa-thumbs-up fa-2x text-green"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Number of Likes</p>
+                            <span class="font-bold text-title">645</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="charts__left">
+                        <div class="charts__left__title">
+                            <div>
+                                <h1>Daily Reports</h1>
+                                <p>Cupertino, California, USA</p>
+                            </div>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div id="apex1"></div>
+                    </div>
+                    <div class="charts__right">
+                        <div class="charts__right__title">
+                            <div>
+                                <h1>Starts Reports</h1>
+                                <p>Cupertino, California, USA</p>
+                            </div>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="charts__right__cards">
+                            <div class="card1">
+                                <h1>Income</h1>
+                                <p>$75,000</p>
+                            </div>
+                            <div class="card2">
+                                <h1>Sales</h1>
+                                <p>$124,000</p>
+                            </div>
+                            <div class="card3">
+                                <h1>Users</h1>
+                                <p>500</p>
+                            </div>
+                            <div class="card4">
+                                <h1>Orders</h1>
+                                <p>2000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__img">
+                    <img src="./assets/images/logo.png" alt="logo">
+                    <h1>Codersbite</h1>
+                </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
+            <div class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fa fa-home"></i>
+                    <a href="#">Dashboard</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-user-secret"></i>
+                    <a href="#">Admin Management</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-building"></i>
+                    <a href="#">Company Management</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-wrench"></i>
+                    <a href="#">Employee Management</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-archive"></i>
+                    <a href="#">Warehouse</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-handshake"></i>
+                    <a href="#">Contracts</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-question"></i>
+                    <a href="#">Requests</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-sign-in-alt"></i>
+                    <a href="#">Leave Policy</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-calendar-check"></i>
+                    <a href="#">Special Days</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-file-alt"></i>
+                    <a href="#">Apply for leave</a>
+                </div>
+                <h2>PAYROLL</h2>
+                <div class="sidebar__link">
+                    <i class="fas fa-credit-card"></i>
+                    <a href="#">Payroll</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-briefcase"></i>
+                    <a href="#">Paygrade</a>
+                </div>
+                <div class="sidebar__logout">
+                    <i class="fa fa-power-off"></i>
+                    <a href="#">Logout</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+  <!-- js here -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/popper.min.js" ></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.pagepiling.min.js"></script>
+  <script src="./assets/css/slick/slick.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
